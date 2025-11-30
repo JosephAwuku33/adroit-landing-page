@@ -13,10 +13,10 @@ export default function Brands() {
         <div className="flex flex-col gap-16 items-center justify-center w-full">
           {/* ... Title and Description content ... */}
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold text-center">
+            <h2 className="text-3xl md:text-4xl text-center font-extrabold text-gray-900 tracking-tight mb-4">
               Trusted by major brands in Africa and beyond
             </h2>
-            <p className="text-center">
+            <p className="text-center text-lg text-gray-600">
               Our team has delivered platforms and products...
             </p>
           </div>

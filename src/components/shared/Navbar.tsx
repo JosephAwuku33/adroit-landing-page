@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+// import { NavLink } from "react-router";
 import { navLinks } from "../../data/navLinks";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
@@ -86,13 +86,13 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-2 lg:space-x-6 pr-4">
           {navLinks.map((link) => (
-            <NavLink
+            <a
               key={link.name}
-              to={link.path}
+              href={link.path}
               className="font-inter text-lg hover:text-blue-500"
             >
               {link.name}
-            </NavLink>
+            </a>
           ))}
         </div>
 
@@ -106,9 +106,9 @@ export default function Navbar() {
             >
               <div className="flex flex-col space-y-6 font-inter">
                 {navLinks.map((link) => (
-                  <NavLink key={link.name} to={link.path} onClick={toggleMenu}>
+                  <a key={link.name} href={link.path} onClick={toggleMenu}>
                     {link.name}
-                  </NavLink>
+                  </a>
                 ))}
                 {/* Mobile CTA */}
                 <button className="rounded-md px-6 py-3 bg-primary ">

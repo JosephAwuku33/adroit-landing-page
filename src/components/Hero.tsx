@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Hero() {
   return (
-    <section className="py-8 bg-white/80 mt-24">
+    <section className="py-16 bg-white/80 mt-24">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row gap-3 items-center">
           <div className="w-full md:w-1/2 mb-12 md:mb-0">

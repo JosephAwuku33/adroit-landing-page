@@ -43,7 +43,7 @@ export default function HowWeWork() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50/50 w-full font-inter">
+    <section id="howwework" className="py-20 bg-gray-50/50 w-full font-inter">
       <div className="container mx-auto px-6 md:px-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

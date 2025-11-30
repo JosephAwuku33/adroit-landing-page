@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row gap-3 items-center">
           <div className="w-full md:w-1/2 mb-12 md:mb-0">
-            <h1 className="text-5xl font-bold leading-tight font-inter text-blue-900">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight font-inter text-blue-900 min-h-[150px]">
               <Typewriter
                 options={{
                   strings: [

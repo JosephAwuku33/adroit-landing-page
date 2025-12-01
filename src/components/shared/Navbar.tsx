@@ -28,7 +28,7 @@ export default function Navbar() {
           : "flex-row items-center justify-between"
       }  bg-white fixed w-full z-20 top-0 start-0 p-2 md:p-4`}
     >
-      <div className="max-w-7xl flex flex-wrap items-center justify-between border-b border-gray-300 md:mx-4 p-3 shadow-md shadow-primary">
+      <div className="max-w-7xl flex flex-wrap items-center justify-between border-b border-gray-300 md:mx-4 p-3 shadow-sm shadow-primary">
         <div className="flex flex-row items-center gap-2">
           <img
             src={assets.AdroitLogo}
@@ -89,7 +89,7 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.path}
-              className="font-inter text-lg hover:text-blue-500"
+              className="font-inter text-lg tracking-tighter text-gray-800 hover:text-blue-500"
             >
               {link.name}
             </a>
@@ -106,7 +106,12 @@ export default function Navbar() {
             >
               <div className="flex flex-col space-y-6 font-inter">
                 {navLinks.map((link) => (
-                  <a key={link.name} href={link.path} onClick={toggleMenu}>
+                  <a
+                    key={link.name}
+                    className="tracking-tighter text-gray-800"
+                    href={link.path}
+                    onClick={toggleMenu}
+                  >
                     {link.name}
                   </a>
                 ))}

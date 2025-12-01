@@ -1,5 +1,7 @@
 // import { FiCheck } from "react-icons/fi";
 
+import { FaStar } from "react-icons/fa";
+
 function ListItemText({ text }: { text: string }) {
   return (
     <li className="flex items-stretch gap-3 pl-4">
@@ -50,7 +52,7 @@ export default function EngagementModels() {
     <section className="bg-white/10 py-16 w-full font-inter">
       <div className="container mx-auto px-6 md:px-12">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-8">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
             Simple, transparent engagement models
           </h2>
@@ -66,8 +68,10 @@ export default function EngagementModels() {
               {/* top thing */}
               {index === 1 && (
                 <div className="absolute -top-3 left-0 mx-auto w-full flex items-center justify-center">
-                  <div className="rounded-full p-2 bg-primary">
-                    <p className="text-white">Most popular</p>
+                  <div className="rounded-full flex items-center gap-2 px-4 py-1.5 bg-pink-200">
+                    <FaStar color="#f341a9" size={18} />
+
+                    <p className="text-primary font-medium text-sm">Most popular</p>
                   </div>
                 </div>
               )}

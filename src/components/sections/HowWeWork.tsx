@@ -1,4 +1,3 @@
-// Importing icons from react-icons
 import { FiPhoneCall, FiPenTool, FiUsers } from "react-icons/fi";
 import { IoRocketOutline } from "react-icons/io5";
 

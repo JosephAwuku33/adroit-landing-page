@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { faqs } from "../data/faq";
-import { AccordionItem } from "./ui/Accordion";
+import { faqs } from "../../data/faq";
+import { AccordionItem } from "../ui/Accordion";
 
 export default function FAQ() {
   // State to track which index is currently open

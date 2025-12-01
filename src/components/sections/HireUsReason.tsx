@@ -4,7 +4,7 @@ export default function HireUsReason() {
     <section className="py-8 bg-linear-to-b from-secondary to-primary text-black w-full">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col items-center gap-8 justify-center w-full font-inter">
-          <h2 className="text-3xl font-bold text-center">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">
             What you can hire us for?
           </h2>
 
@@ -18,9 +18,9 @@ export default function HireUsReason() {
                 src="https://tecnologia.vamtam.com/wp-content/uploads/2023/03/Innovative.svg"
                 alt="Engineering"
               />
-              <p className="font-bold text-lg">White Label Engineering</p>
+              <p className="font-bold text-gray-900 text-lg">White Label Engineering</p>
 
-              <p className="text-base">
+              <p className="text-gray-600 leading-relaxed">
                 We act as your internal engineering squad. You keep the client
                 relationship and brand; we handle the heavy lifting on web,
                 mobile, and backend development.
@@ -36,11 +36,11 @@ export default function HireUsReason() {
                 src="https://tecnologia.vamtam.com/wp-content/uploads/2023/03/Industry.svg"
                 alt="Startups"
               />
-              <p className="font-bold text-lg">
+              <p className="font-bold text-gray-900 text-lg">
                 Dedicated product squad for startups
               </p>
 
-              <p className="text-base">
+              <p className="text-gray-600 leading-relaxed">
                 We give you a cross-functional team (full-stack devs, QA,
                 optional PM) that plugs into your roadmap and workflow. You get
                 the output of a full engineering team at the cost of one U.S.
@@ -57,9 +57,9 @@ export default function HireUsReason() {
                 src="https://tecnologia.vamtam.com/wp-content/uploads/2023/03/Scalability.svg"
                 alt="Roboto"
               />
-              <p className="font-bold text-lg">AI and automation projects</p>
+              <p className="font-bold text-gray-900 text-lg">AI and automation projects</p>
 
-              <p className="text-base">
+              <p className="text-gray-600 leading-relaxed">
                 We build AI-powered tools that save time and cut costs: internal
                 copilots, chatbots, workflow automation, dashboards, OCR and
                 data pipelines.

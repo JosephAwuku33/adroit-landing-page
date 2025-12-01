@@ -1,4 +1,4 @@
-import { brands } from "../data/brands";
+import { brands } from "../../data/brands";
 import { motion } from "motion/react";
 
 // Duplicate the brands array for infinite looping

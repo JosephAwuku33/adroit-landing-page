@@ -1,9 +1,11 @@
-import Brands from "../components/Brands";
-import FAQ from "../components/FAQ";
-import Hero from "../components/Hero";
-import HireUsReason from "../components/HireUsReason";
-import HowWeWork from "../components/HowWeWork";
-import WhyItWorks from "../components/WhyItWorks";
+import Brands from "../components/sections/Brands";
+import EngagementModels from "../components/sections/EngagementModels";
+import FAQ from "../components/sections/FAQ";
+import Hero from "../components/sections/Hero";
+import HireUsReason from "../components/sections/HireUsReason";
+import HowWeWork from "../components/sections/HowWeWork";
+import WhatWeDelivered from "../components/sections/WhatWeDelivered";
+import WhyItWorks from "../components/sections/WhyItWorks";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <HireUsReason />
       <WhyItWorks />
       <HowWeWork />
+      <EngagementModels/>
+      <WhatWeDelivered />
       <FAQ />
     </main>
   );

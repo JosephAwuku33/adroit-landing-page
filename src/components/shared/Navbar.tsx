@@ -117,7 +117,7 @@ export default function Navbar() {
                 ))}
                 {/* Mobile CTA */}
                 <button className="rounded-md px-6 py-3 bg-primary ">
-                  <p className="text-base font-inter font-bold text-center text-white">
+                  <p className="text-base font-inter font-semibold text-center text-white">
                     Book A Call
                   </p>
                 </button>
@@ -129,7 +129,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <div className="md:block hidden">
           <button className="rounded-md px-6 py-3 bg-primary ">
-            <p className="text-base font-inter font-bold text-center text-white">
+            <p className="text-base font-inter font-semibold text-center text-white">
               Book A Call
             </p>
           </button>

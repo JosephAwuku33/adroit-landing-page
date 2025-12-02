@@ -18,6 +18,7 @@ export default function EngagementModels() {
   const items = [
     {
       id: "1",
+      img: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Agency Overflow Squad",
       subtitle: "Perfect for agencies needing extra capacity",
       listItems: [
@@ -28,8 +29,9 @@ export default function EngagementModels() {
     },
     {
       id: "2",
-      title: "Startup Product Squd",
-      subtitle: "Best value for growingn startups",
+      img: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Startup Product Squad",
+      subtitle: "Best value for growing startups",
       listItems: [
         "2-3 full engineers + QA",
         "Part-time PM included",
@@ -38,6 +40,7 @@ export default function EngagementModels() {
     },
     {
       id: "3",
+      img: "https://media.istockphoto.com/id/1446470674/photo/mvp-minimum-viable-product-concept-for-lean-startup-life-cycle-of-product-development.jpg?s=1024x1024&w=is&k=20&c=TeprYs0JavadJ3toBS-rvpLfob2ZADtOjXAamf0fGKg=",
       title: "Fixed-scope MVP Build",
       subtitle: "Complete project delivery",
       listItems: [
@@ -50,7 +53,7 @@ export default function EngagementModels() {
 
   return (
     <section className="bg-white/10 py-16 w-full font-inter">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-4 md:px-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
@@ -59,19 +62,30 @@ export default function EngagementModels() {
         </div>
 
         {/* items */}
-        <div className="grid grid-cols-1 md:grid-cols-3 place-items-stretch px-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 place-items-stretch px-2 gap-6">
           {items.map((item, index) => (
             <div
               key={item.id}
-              className="bg-white border rounded-xl border-gray-200 hover:scale-110 shadow-xl group relative flex flex-col items-start gap-12 p-6"
+              className={`${
+                index === 1 && `shadow-lg shadow-teal-100`
+              } bg-white rounded-xl border-gray-200 shadow-sm border hover:border-blue-200 hover:shadow-xl hover:shadow-blue-50/50 transition-all duration-300 hover:-translate-y-2 hover:scale-110 group relative flex flex-col items-start gap-4 p-6`}
             >
+              {/* img */}
+              <div className="w-full h-1/2">
+                <img
+                  src={item.img}
+                  className="w-full h-full rounded-xl object-cover"
+                />
+              </div>
               {/* top thing */}
               {index === 1 && (
-                <div className="absolute -top-3 left-0 mx-auto w-full flex items-center justify-center">
+                <div className="absolute -top-5 left-0 mx-auto w-full flex items-center justify-center">
                   <div className="rounded-full flex items-center gap-2 px-4 py-1.5 bg-pink-200">
                     <FaStar color="#f341a9" size={18} />
 
-                    <p className="text-primary font-medium text-sm">Most popular</p>
+                    <p className="text-primary font-medium text-sm">
+                      Most popular
+                    </p>
                   </div>
                 </div>
               )}
@@ -88,8 +102,8 @@ export default function EngagementModels() {
 
               {/* list texts */}
               <div className="flex flex-col gap-4">
-                {item.listItems.map((listItem) => (
-                  <ul className="flex flex-col">
+                {item.listItems.map((listItem, index) => (
+                  <ul key={index} className="flex flex-col">
                     <ListItemText text={listItem} />
                   </ul>
                 ))}

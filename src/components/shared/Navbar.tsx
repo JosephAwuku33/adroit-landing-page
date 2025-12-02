@@ -28,7 +28,7 @@ export default function Navbar() {
           : "flex-row items-center justify-between"
       }  bg-white fixed w-full z-20 top-0 start-0 p-2 md:p-4`}
     >
-      <div className="max-w-7xl flex flex-wrap items-center justify-between border-b border-gray-300 md:mx-4 p-3 shadow-sm shadow-primary">
+      <div className="max-w-full flex flex-wrap items-center justify-between border-b border-gray-300 md:mx-4 p-3 shadow-sm shadow-primary">
         <div className="flex flex-row items-center gap-2">
           <img
             src={assets.AdroitLogo}

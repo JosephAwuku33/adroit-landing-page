@@ -10,6 +10,8 @@ export default function WhatWeDelivered() {
       description:
         "We built and scaled an ordering and logistics system for a major beverage brand, handling thousands of orders and complex delivery rules.",
       icon: <IoCubeOutline className="w-6 h-6 text-primary" />,
+      imgIcon:
+        "https://www.appventurez.com/wp-content/themes/appventurez_theme/assets/images/industy-NEW/logistics.svg",
       color: "bg-[#505058]",
     },
     {
@@ -18,6 +20,8 @@ export default function WhatWeDelivered() {
       description:
         "We supported a telecom giant with digital tools that improved customer experience and internal workflows.",
       icon: <FiSmartphone className="w-6 h-6 text-primary" />,
+      imgIcon:
+        " //www.appventurez.com/wp-content/themes/appventurez_theme/assets/images/industy-NEW/automotives.svg",
       color: "bg-[#505058]",
     },
     {
@@ -26,6 +30,8 @@ export default function WhatWeDelivered() {
       description:
         "We delivered secure, workflow-heavy platforms for institutional and legal clients, with strict uptime and data requirements.",
       icon: <LuBuilding2 className="w-6 h-6 text-primary" />,
+      imgIcon:
+        "https://www.appventurez.com/wp-content/themes/appventurez_theme/assets/images/industy-NEW/banking.svg",
       color: "bg-[#505058]",
     },
   ];
@@ -49,9 +55,9 @@ export default function WhatWeDelivered() {
             >
               {/* Icon */}
               <div
-                className={`${item.color} p-3 rounded-xl group-hover:scale-110 group-hover:bg-pink-100`}
+                className={`${item.color} p-3 rounded-xl group-hover:scale-110`}
               >
-                {item.icon}
+                <img src={item.imgIcon} />
               </div>
               {/* Title */}
               <h3 className="text-lg font-semibold text-gray-800 mb-3 group-hover:text-blue-900">

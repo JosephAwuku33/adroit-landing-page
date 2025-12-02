@@ -22,7 +22,7 @@ export default function FAQ() {
         </div>
 
         {/* FAQ List */}
-        <div className="bg-white rounded-2xl md:p-8">
+        <div className="bg-white p-4 md:p-8">
           {faqs.map((faq, index) => (
             <AccordionItem
               key={index}

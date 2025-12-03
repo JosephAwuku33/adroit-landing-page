@@ -52,7 +52,7 @@ export default function EngagementModels() {
   ];
 
   return (
-    <section className="bg-white/10 py-16 w-full font-inter">
+    <section id="models" className="bg-white/10 py-16 w-full font-inter">
       <div className="container mx-auto px-4 md:px-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">

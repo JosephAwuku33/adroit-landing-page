@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap");
 @import "tailwindcss";
 
 @keyframes marquee {
@@ -17,7 +18,10 @@
   --color-white: #ffffff;
   --color-black: #000000;
   --color-primary: #f341a9;
+  /* --color-primary: #0a0a0a; */
   --color-secondary: #8dd9f7;
+  /* --color-secondary: #00ffab; */
+  --color-accent: #ffffff;
   --color-light-primary: #fec50b;
   --color-purple: #a50392;
 
@@ -25,10 +29,13 @@
   --font-inter-tight: "Inter Tight", sans-serif;
   --font-roboto: "Roboto", sans-serif;
   --font-poppins: "Poppins";
-  --font-sans-serif: sans-serif;
+  --font-hepta-slab: "Hepta Slab", serif;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply overscroll-none;
 }

@@ -6,8 +6,7 @@ type NavLink = {
 export const navLinks: NavLink[] = [
   { name: "What we do", path: "#whatwedo" },
   { name: "How we work", path: "#howwework" },
-  { name: "Pricing", path: "#pricing" },
-  { name: "Case studies", path: "#casestudies" },
+  { name: "Models", path: "#models" },
   { name: "FAQ", path: "#faq" },
 ];
 

@@ -1,7 +1,7 @@
 export default function HireUsReason() {
   // const color = "#323a61"
   return (
-    <section className="py-8 relative text-black w-full">
+    <section id="whatwedo" className="py-8 relative text-black w-full">
       {/* img */}
       <div className="absolute inset-0 w-full">
         <img

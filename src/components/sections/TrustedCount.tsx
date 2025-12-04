@@ -34,7 +34,11 @@ export default function TrustedCount() {
           {countRecords.map((item, index) => (
             <div key={item.id} className="flex flex-col items-center">
               <h3 className="text-4xl md:text-5xl font-hepta-slab font-bold text-gray-900">
-                <CountUp end={item.number} duration={15} />
+                <CountUp
+                  enableScrollSpy={true}
+                  end={item.number}
+                  duration={15}
+                />
                 {`${index === 3 ? "°" : "+"} `}
               </h3>
               <p className="font-inter text-sm md:text-base">{item.text}</p>

@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence } from "motion/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import Home from "./pages/Home";
 // import Navbar from "./components/shared/Navbar";
@@ -10,15 +10,11 @@ function App() {
     <AnimatePresence>
       <Router>
         <Header />
-        <motion.main
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+        <main className="min-w-full">
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
-        </motion.main>
+        </main>
         <Footer />
       </Router>
     </AnimatePresence>

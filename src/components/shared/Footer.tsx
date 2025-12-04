@@ -24,7 +24,7 @@ const itemVariants = {
 export default function Footer() {
   return (
     <motion.footer
-      className="bg-linear-to-b from-secondary to-primary text-blue-700 font-inter"
+      className="bg-linear-to-b from-secondary to-primary text-pink-900 font-inter"
       variants={footerVariants}
       initial="hidden"
       whileInView="visible"

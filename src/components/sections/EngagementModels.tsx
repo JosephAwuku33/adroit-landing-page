@@ -62,7 +62,7 @@ export default function EngagementModels() {
         </div>
 
         {/* items */}
-        <div className="grid grid-cols-1 md:grid-cols-3 place-items-stretch px-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 place-items-stretch px-2 gap-4">
           {items.map((item, index) => (
             <div
               key={item.id}

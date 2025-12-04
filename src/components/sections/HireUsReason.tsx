@@ -17,7 +17,7 @@ export default function HireUsReason() {
       {/* main content */}
       <div className="container mx-auto relative px-6 md:px-12 z-10">
         <div className="flex flex-col items-center gap-8 justify-center w-full font-inter">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white/95 tracking-tight">
+          <h2 className="text-3xl md:text-4xl text-center font-extrabold text-white/95 tracking-tight">
             What you can hire us for?
           </h2>
 

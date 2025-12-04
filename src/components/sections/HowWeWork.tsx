@@ -1,48 +1,43 @@
 import { FiPhoneCall, FiPenTool, FiUsers } from "react-icons/fi";
 import { IoRocketOutline } from "react-icons/io5";
+import { motion } from "motion/react";
+import useScreenAndScroll from "../shared/navbar/useScreenAndScroll";
 
 export default function HowWeWork() {
+  const { isMobile } = useScreenAndScroll();
   const steps = [
     {
       id: "01",
       title: "Quick Discovery Call",
       description:
         "We learn about your projects, tech stack, and exactly where your current capacity is breaking in a focused 20-minute chat.",
-      // Using FiPhoneCall
       icon: <FiPhoneCall className="w-6 h-6 text-blue-600" />,
-      color: "bg-blue-50 border-blue-100",
     },
     {
       id: "02",
       title: "Shape the Engagement",
       description:
         "We agree on the model: white-label, dedicated squad, or project-based. You see a clear plan, timeline, and monthly cost.",
-      // Using FiPenTool
       icon: <FiPenTool className="w-6 h-6 text-indigo-600" />,
-      color: "bg-indigo-50 border-indigo-100",
     },
     {
       id: "03",
       title: "Onboard the Squad",
       description:
         "We plug into your tools (Slack, Jira, GitHub). We align on sprint lengths, demo days, and communication rhythm immediately.",
-      // Using FiUsers
       icon: <FiUsers className="w-6 h-6 text-purple-600" />,
-      color: "bg-purple-50 border-purple-100",
     },
     {
       id: "04",
       title: "Build and Iterate",
       description:
         "We ship in 2-week sprints with demos, code reviews, and regular check-ins. You get predictable output and transparent progress.",
-      // Using IoRocketOutline for a dynamic look
       icon: <IoRocketOutline className="w-6 h-6 text-teal-600" />,
-      color: "bg-teal-50 border-teal-100",
     },
   ];
 
   return (
-    <section id="howwework" className="py-20 bg-gray-50/50 w-full font-inter">
+    <section id="howwework" className="py-20 bg-gray-50/50 min-w-full font-inter">
       <div className="container mx-auto px-6 md:px-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -55,40 +50,63 @@ export default function HowWeWork() {
           </p>
         </div>
 
-        {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
-          {steps.map((step) => (
-            <div
-              key={step.id}
-              className="group relative bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-50/50 transition-all duration-300 hover:-translate-y-2"
-            >
-              {/* Top Section: Icon & Number */}
-              <div className="flex justify-between items-start mb-6">
-                {/* Icon Circle */}
-                <div
-                  className={`p-3 rounded-xl ${step.color} group-hover:scale-110 transition-transform duration-300`}
+        {/* Timeline */}
+        <div className="relative max-w-3xl mx-auto">
+          {/* Timeline Line */}
+          <div className="absolute left-6 top-0 bottom-0 w-px bg-gray-300 md:left-1/2 transform md:-translate-x-1/2" />
+
+          <div className="space-y-20 w-full">
+            {steps.map((step, index) => {
+              const isLeft = index % 2 === 0;
+
+              return (
+                <motion.div
+                  key={step.id}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                  className={`relative flex flex-col md:flex-row ${
+                    isLeft ? "md:justify-start" : "md:justify-end"
+                  }`}
                 >
-                  {step.icon}
-                </div>
+                  {/* Connector Dot */}
+                  <motion.div
+                    initial={{ scale: 0.5, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
+                    className="absolute left-2 top-2 w-12 h-12 p-1 rounded-full bg-white border-2 border-blue-500 md:left-1/2 md:-translate-x-1/2 flex items-center justify-center shadow-sm"
+                  >
+                    {step.icon}
+                  </motion.div>
 
-                {/* Watermark Number */}
-                <span className="text-4xl font-bold text-blue-900 lg:text-gray-100 lg:group-hover:text-blue-500 transition-colors duration-300 select-none">
-                  {step.id}
-                </span>
-              </div>
+                  {/* Number Watermark */}
+                  <span
+                    className={`absolute text-5xl font-bold text-blue-900 md:text-6xl ${
+                      isLeft ? "md:-left-24" : "md:-right-24"
+                    } top-0 ${isMobile && `left-16`} pointer-events-none`}
+                  >
+                    {step.id}
+                  </span>
 
-              {/* Content */}
-              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors">
-                {step.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-sm">
-                {step.description}
-              </p>
-
-              {/* Decorative bottom line */}
-              <div className="absolute bottom-0 left-6 right-6 h-0.5 bg-gray-50 group-hover:bg-blue-500/20 transition-colors duration-300" />
-            </div>
-          ))}
+                  {/* Content */}
+                  <div
+                    className={`mt-14 ${isMobile && `ml-16`} md:mt-0 md:w-1/2 ${
+                      isLeft
+                        ? "md:pr-10 text-left"
+                        : "md:pl-10 text-left md:text-right"
+                    }`}
+                  >
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      {step.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

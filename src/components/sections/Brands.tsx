@@ -26,7 +26,6 @@ export default function Brands() {
                   initial={b.initial}
                   whileInView={b.whileInView}
                   transition={b.transition}
-                  viewport={{ once: true }}
                   className="h-4/5 w-4/5 md:h-2/3 md:w-2/3 object-contain place-self-center"
                 />
               ))}
@@ -42,7 +41,6 @@ export default function Brands() {
                   initial={b.initial}
                   whileInView={b.whileInView}
                   transition={b.transition}
-                  viewport={{ once: true }}
                   className="h-4/5 w-4/5 md:h-2/3 md:w-2/3 object-contain place-self-center"
                 />
               ))}
@@ -58,7 +56,6 @@ export default function Brands() {
                   initial={b.initial}
                   whileInView={b.whileInView}
                   transition={b.transition}
-                  viewport={{ once: true }}
                   className="h-4/5 w-4/5 md:h-2/3 md:w-2/3 object-contain place-self-center"
                 />
               ))}

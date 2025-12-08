@@ -9,7 +9,7 @@ export default function Header() {
       className="relative min-h-screen z-50 bg-cover bg-center bg-no-repeat min-w-screen"
       style={{
         backgroundImage: isMobile
-          ? `url("https://res.cloudinary.com/dsttnkan0/image/upload/v1765214154/flamengo-with-contrast_lga71n.jpg")`
+          ? `url("https://res.cloudinary.com/dsttnkan0/image/upload/v1765217085/flamengo-with-lowered-brightness_ovkxey.jpg")`
           : `url("https://images.unsplash.com/photo-1763996147774-522014c41e74?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
       }}
     >

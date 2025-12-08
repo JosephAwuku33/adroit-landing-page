@@ -36,7 +36,7 @@ import { MdEmail } from "react-icons/md";
 
 export default function Hero() {
   return (
-    <section className="py-28 bg-none ">
+    <section className="py-28 bg-none w-full">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row gap-3 items-center">
           <div className="w-full md:w-2/5 mb-12 md:mb-0">

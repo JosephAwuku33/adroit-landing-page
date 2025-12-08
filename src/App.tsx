@@ -9,7 +9,7 @@ function App() {
     <AnimatePresence>
       <Router>
         <Header />
-        <main className="min-w-full">
+        <main className="max-w-screen overflow-x-hidden">
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>

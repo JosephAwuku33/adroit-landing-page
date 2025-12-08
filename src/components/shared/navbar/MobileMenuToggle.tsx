@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "motion/react";
 import { MenuIcon } from "../../icons/Menu";
 import { CloseIcon } from "../../icons/Close";
+import useScreenAndScroll from "./useScreenAndScroll";
 
 type MobileMenuToggleProps = {
   isOpen: boolean;
@@ -11,6 +12,7 @@ export default function MobileMenuToggle({
   isOpen,
   setIsOpen,
 }: MobileMenuToggleProps) {
+  const { isMobile, scrolled } = useScreenAndScroll();
   return (
     <button
       onClick={() => setIsOpen(!isOpen)}
@@ -31,7 +33,9 @@ export default function MobileMenuToggle({
                 stiffness: 150,
                 damping: 30,
               }}
-              className="absolute inset-0 flex items-center justify-center text-black"
+              className={`${
+                isMobile && !scrolled ? "text-white" : "text-black"
+              } absolute inset-0 flex items-center justify-center`}
             >
               <MenuIcon />
             </motion.span>

@@ -40,7 +40,7 @@ export default function Hero() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row gap-3 items-center">
           <div className="w-full md:w-2/5 mb-12 md:mb-0">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight font-inter text-blue-900 min-h-[150px]">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight font-inter text-blue-300 md:text-blue-900 min-h-[150px]">
               {/* <Typewriter
                 options={{
                   strings: [
@@ -64,7 +64,7 @@ export default function Hero() {
 
             <div className="flex flex-row gap-2 items-center w-full md:w-3/4 mt-2">
               <div className="w-1/2 border border-gray-300" />
-              <span>Or</span>
+              <span className="text-white font-bold">Or</span>
               <div className="w-1/2 border border-gray-300" />
             </div>
 

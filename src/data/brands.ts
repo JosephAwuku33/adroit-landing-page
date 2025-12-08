@@ -1,28 +1,8 @@
-// export const brands = [
-//   {
-//     name: "MTN",
-//     imgUrl:
-//       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/New-mtn-logo.jpg/960px-New-mtn-logo.jpg?20220217143058",
-//   },
-
-//   {
-//     name: "Coca Cola",
-//     imgUrl:
-//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPM7J9OpT60ApwcCZG_4NAUORNfpRZczt5hQ&s",
-//   },
-
-//   {
-//     name: "IFC",
-//     imgUrl:
-//       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/International_Finance_Corporation_logo.svg/2560px-International_Finance_Corporation_logo.svg.png?20210711041020",
-//   },
-
-//   {
-//     name: "Vitamilk",
-//     imgUrl: "https://images.seeklogo.com/logo-png/52/1/vitamilk-logo-png_seeklogo-527320.png"
-//   },
-// ];
-import { type Transition, type TargetAndTransition, type VariantLabels } from "motion/react";
+import {
+  type Transition,
+  type TargetAndTransition,
+  type VariantLabels,
+} from "motion/react";
 
 type Brand = {
   name: string;
@@ -30,7 +10,6 @@ type Brand = {
   initial: boolean | TargetAndTransition | VariantLabels | undefined;
   whileInView: TargetAndTransition | VariantLabels | undefined;
   transition: Transition;
-
 };
 export const brands: Brand[] = [
   {
@@ -57,8 +36,8 @@ export const brands: Brand[] = [
   },
 
   {
-    name: "Airtel Tigo",
-    imgUrl: "https://adroit360.com/wp-content/uploads/2021/01/4.png",
+    name: "IFC",
+    imgUrl: "https://www.ifpri.org/wp-content/uploads/2020/03/ifc.png",
     initial: { opacity: 0, y: -50 },
     whileInView: { opacity: 1, y: 0 },
     transition: { duration: 0.8, ease: "easeOut" },
@@ -87,17 +66,17 @@ export const brands: Brand[] = [
     transition: { duration: 0.8, ease: "easeOut" },
   },
   {
-    name: "World Energy",
+    name: "Texas Drilling",
     imgUrl:
-      "https://adroit360.com/wp-content/uploads/2021/01/1796-x-430-EM.png",
+      "https://res.cloudinary.com/dsttnkan0/image/upload/fl_preserve_transparency/v1765212036/texas_drilling_znw44e.jpg?_s=public-apps",
     initial: { opacity: 0, x: 50 },
     whileInView: { opacity: 1, x: 0 },
     transition: { duration: 0.8, ease: "easeOut" },
   },
   {
-    name: "Legon Cities",
+    name: "Catharina Foundation",
     imgUrl:
-      "https://adroit360.com/wp-content/uploads/2021/01/LCFC-Logo-resized-60.png",
+      "https://catharinascarefoundation.com/wp-content/uploads/2020/05/Catharinas-Care-Foundation-logo-favicon-144.jpg",
     initial: { opacity: 0, x: 50 },
     whileInView: { opacity: 1, x: 0 },
     transition: { duration: 0.8, ease: "easeOut" },

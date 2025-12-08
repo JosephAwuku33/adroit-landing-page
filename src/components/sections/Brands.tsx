@@ -26,7 +26,7 @@ export default function Brands() {
                   initial={b.initial}
                   whileInView={b.whileInView}
                   transition={b.transition}
-                  className="h-4/5 w-4/5 md:h-2/3 md:w-2/3 object-contain place-self-center"
+                  className="h-4/5 w-4/5  object-contain place-self-center"
                 />
               ))}
             </div>
@@ -41,7 +41,7 @@ export default function Brands() {
                   initial={b.initial}
                   whileInView={b.whileInView}
                   transition={b.transition}
-                  className="h-4/5 w-4/5 md:h-2/3 md:w-2/3 object-contain place-self-center"
+                  className="h-full w-full object-contain place-self-center"
                 />
               ))}
             </div>
@@ -56,7 +56,7 @@ export default function Brands() {
                   initial={b.initial}
                   whileInView={b.whileInView}
                   transition={b.transition}
-                  className="h-4/5 w-4/5 md:h-2/3 md:w-2/3 object-contain place-self-center"
+                  className="h-4/5 w-4/5 object-contain place-self-center"
                 />
               ))}
             </div>

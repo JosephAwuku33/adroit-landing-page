@@ -44,20 +44,19 @@ export default function Footer() {
           <div className="border border-gray-300 w-full hidden md:block md:w-0 md:h-12 " />
           <div className="hidden md:block">
             <p className="text-pink-900 text-base">
-              Kwame Gyan Complex,
-              <br />
-              Accra, Ghana
+              77 Sugar Creek Center Boulevard, <br />
+              Suger Land, Tx 77478,USA
             </p>
           </div>
           <div className="border border-gray-300 w-full md:w-0 md:h-12" />
           <div className="space-y-4 md:space-y-0">
             <p className="text-pink-900 text-base md:hidden block">
-              Kwame Gyan Complex,
-              <br className="hidden md:block" />
-              Accra, Ghana
+              77 Sugar Creek Center Boulevard,
+              <br />
+              Suger Land, Tx 77478,USA
             </p>
             <div>
-              <p className="text-pink-900 text-base">T:+233 20 076 5236</p>
+              <p className="text-pink-900 text-base">T:+1-937-776-8924</p>
               <p className="text-pink-900 text-base">E:adroit360@info.com</p>
             </div>
           </div>

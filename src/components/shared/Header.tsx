@@ -6,7 +6,7 @@ export default function Header() {
   const { isMobile } = useScreenAndScroll();
   return (
     <header
-      className="relative min-h-screen z-50 bg-cover bg-center bg-no-repeat min-w-screen"
+      className="relative min-h-full z-50 bg-cover bg-center bg-no-repeat min-w-screen"
       style={{
         backgroundImage: isMobile
           ? `url("https://res.cloudinary.com/dsttnkan0/image/upload/v1765217085/flamengo-with-lowered-brightness_ovkxey.jpg")`

@@ -10,7 +10,7 @@ import WhyItWorks from "../components/sections/WhyItWorks";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full overflow-x-hidden">
+    <main className="min-h-screen min-w-screen overflow-x-hidden">
       <Brands />
       <TrustedCount />
       <HireUsReason />

@@ -1,4 +1,4 @@
-import { AnimatePresence } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import Home from "./pages/Home";
 import Footer from "./components/shared/Footer";
@@ -7,7 +7,12 @@ import Header from "./components/shared/Header";
 function App() {
   return (
     <AnimatePresence>
-      <div className="min-h-screen w-full overflow-x-hidden">
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="min-h-screen w-full overflow-x-hidden"
+      >
         <Router>
           <Header />
           <Routes>
@@ -15,7 +20,7 @@ function App() {
           </Routes>
           <Footer />
         </Router>
-      </div>
+      </motion.div>
     </AnimatePresence>
   );
 }

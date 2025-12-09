@@ -37,8 +37,8 @@ export default function HowWeWork() {
   ];
 
   return (
-    <section id="howwework" className="py-20 bg-gray-50/50 min-w-full font-inter">
-      <div className="container mx-auto px-6 md:px-12">
+    <section id="howwework" className="py-20 bg-gray-50/50 font-inter w-full">
+      <div className="container mx-auto px-6 md:px-28 lg:px-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">

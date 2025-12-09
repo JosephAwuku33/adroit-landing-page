@@ -17,7 +17,7 @@ export default function Brands() {
           </div>
           <div className="flex gap-6 md:w-1/2 justify-center items-center w-full">
             {/* Column 1 — slightly lower */}
-            <div className="grid grid-rows-3 w-full gap-3 ">
+            <div className="grid grid-rows-3 w-full">
               {brands.slice(0, 3).map((b) => (
                 <motion.img
                   key={b.name}
@@ -32,7 +32,7 @@ export default function Brands() {
             </div>
 
             {/* Column 2 — centered */}
-            <div className="grid grid-rows-3 w-full gap-12">
+            <div className="grid grid-rows-3 w-full gap-3">
               {brands.slice(3, 6).map((b) => (
                 <motion.img
                   key={b.name}
@@ -47,7 +47,7 @@ export default function Brands() {
             </div>
 
             {/* Column 3 — slightly higher */}
-            <div className="grid grid-rows-3 w-full gap-3">
+            <div className="grid grid-rows-3 w-full">
               {brands.slice(6, 9).map((b) => (
                 <motion.img
                   key={b.name}

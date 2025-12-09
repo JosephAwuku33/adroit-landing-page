@@ -7,15 +7,15 @@ import Header from "./components/shared/Header";
 function App() {
   return (
     <AnimatePresence>
-      <Router>
-        <Header />
-        <main className="max-w-screen overflow-x-hidden">
+      <div className="min-h-screen w-full overflow-x-hidden">
+        <Router>
+          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
-        </main>
-        <Footer />
-      </Router>
+          <Footer />
+        </Router>
+      </div>
     </AnimatePresence>
   );
 }

@@ -18,9 +18,9 @@ export default function Navbar() {
           : "flex-row items-center justify-between"
       } ${
         scrolled ? "bg-white text-black shadow-lg": "text-white"
-      } fixed w-full z-20 top-0 start-0`}
+      } fixed min-w-full z-20 top-0 start-0`}
     >
-      <div className="max-w-full flex flex-wrap items-center justify-between md:mx-4 p-2">
+      <div className="max-w-7xl flex flex-wrap items-center justify-between md:mx-4 p-2">
         {/* Logo */}
         <div className="flex flex-row items-center">
           <img

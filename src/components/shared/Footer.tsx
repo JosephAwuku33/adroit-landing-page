@@ -30,9 +30,9 @@ export default function Footer() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-8">
+      <div className="mx-auto min-w-full px-6 pb-8 pt-8">
         {/*  */}
-        <div className="flex flex-col md:flex-row md:gap-12 gap-4 items-start w-full">
+        <div className="flex flex-col lg:flex-row lg:gap-12 gap-4 md:gap-6 items-start w-full">
           <div className="flex flex-row items-center gap-2">
             <img
               src={assets.AdroitLogo}
@@ -41,28 +41,28 @@ export default function Footer() {
             />
             <p className="font-inter text-xl text-pink-900">Adroit 360</p>
           </div>
-          <div className="border border-gray-300 w-full hidden md:block md:w-0 md:h-12 " />
-          <div className="hidden md:block">
+          <div className="border border-gray-300 w-full hidden lg:block lg:w-0 lg:h-12 " />
+          <div className="hidden lg:block">
             <p className="text-pink-900 text-base">
               77 Sugar Creek Center Boulevard, <br />
               Suger Land, Tx 77478,USA
             </p>
           </div>
-          <div className="border border-gray-300 w-full md:w-0 md:h-12" />
-          <div className="space-y-4 md:space-y-0">
-            <p className="text-pink-900 text-base md:hidden block">
+          <div className="border border-gray-300 w-full lg:w-0 lg:h-12" />
+          <div className="space-y-4 lg:space-y-0">
+            <p className="text-pink-900 text-base lg:hidden block">
               77 Sugar Creek Center Boulevard,
               <br />
               Suger Land, Tx 77478,USA
             </p>
             <div>
               <p className="text-pink-900 text-base">T:+1-937-776-8924</p>
-              <p className="text-pink-900 text-base">E:adroit360@info.com</p>
+              <p className="text-pink-900 text-base">E:hello@adroit360usa.com</p>
             </div>
           </div>
-          <div className="border border-gray-300 w-full md:w-0 md:h-12" />
-          {/* Mobile Icons */}
-          <div className="grid grid-cols-3 w-full gap-4 md:hidden">
+          <div className="border border-gray-300 w-full md:w-full md:h-0 lg:h-12 lg:w-0" />
+          {/* Mobile Icons and Tablet*/}
+          <div className="grid grid-cols-3 w-full gap-4 lg:hidden">
             {icons.map((item) => (
               <motion.a
                 key={item.name}
@@ -79,7 +79,7 @@ export default function Footer() {
           </div>
 
           {/* Desktop Icons */}
-          <div className="hidden md:flex flex-row gap-4 items-center">
+          <div className="hidden lg:flex flex-row gap-4 items-center">
             {icons.map((item) => (
               <motion.a
                 key={item.name}

@@ -31,7 +31,7 @@ function ListItemSolution({ text }: { text: string }) {
 export default function WhyItWorks() {
   return (
     <section className="py-16 bg-white/90 w-full font-inter">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-4 lg:px-12">
         <div className="flex flex-col items-center gap-12 justify-center w-full">
           {/* Main Section Title */}
           <div className="text-center space-y-4 max-w-2xl">

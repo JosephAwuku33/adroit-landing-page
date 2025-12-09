@@ -1,15 +1,11 @@
 // import { FiCheck } from "react-icons/fi";
-
 import { FaStar } from "react-icons/fa";
 
 function ListItemText({ text }: { text: string }) {
   return (
-    <li className="flex items-stretch gap-3 pl-4">
-      {/* icon container keeps icon at top even if text wraps */}
-      {/* <span className="mt-1 p-1 bg-red-50 text-green-500 rounded-full shrink-0">
-        <FiCheck size={16} />
-      </span> */}
-      <p className="text-base text-gray-700 leading-relaxed">{text}</p>
+    <li className="flex items-start gap-3">
+      <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+      <p className="text-sm text-gray-700 leading-relaxed">{text}</p>
     </li>
   );
 }
@@ -52,56 +48,59 @@ export default function EngagementModels() {
   ];
 
   return (
-    <section id="models" className="bg-white/10 py-16 w-full font-inter">
-      <div className="container mx-auto px-4 md:px-12">
+    <section id="models" className="bg-gray-50 py-20 w-full font-inter">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
             Simple, transparent engagement models
           </h2>
         </div>
 
         {/* items */}
-        <div className="grid grid-cols-1 md:grid-cols-3 place-items-stretch px-2 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 place-items-stretch gap-8">
           {items.map((item, index) => (
             <div
               key={item.id}
-              className={`${
-                index === 1 && `shadow-lg shadow-teal-100`
-              } bg-white rounded-xl border-gray-200 shadow-sm border hover:border-blue-200 hover:shadow-xl hover:shadow-blue-50/50 transition-all duration-300 hover:-translate-y-2 hover:scale-110 group relative flex flex-col items-start gap-4 p-6`}
+              className={`
+                relative flex flex-col gap-6 p-8 rounded-2xl bg-white
+                border border-gray-200 shadow-sm
+                transition-all duration-300
+                hover:-translate-y-1 hover:shadow-lg
+                ${index === 1 ? "ring-2 ring-primary/30 shadow-primary/10" : ""}
+              `}
             >
               {/* img */}
-              <div className="w-full h-1/2">
+              <div className="w-full h-44 overflow-hidden rounded-xl">
                 <img
                   src={item.img}
-                  className="w-full h-full rounded-xl object-cover"
+                  className="w-full h-full object-cover"
+                  alt={item.title}
                 />
               </div>
-              {/* top thing */}
-              {index === 1 && (
-                <div className="absolute -top-5 left-0 mx-auto w-full flex items-center justify-center">
-                  <div className="rounded-full flex items-center gap-2 px-4 py-1.5 bg-pink-200">
-                    <FaStar color="#f341a9" size={18} />
 
-                    <p className="text-primary font-medium text-sm">
-                      Most popular
-                    </p>
+              {/* badge thing */}
+              {index === 1 && (
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  <div className="rounded-full flex items-center gap-2 px-4 py-1.5 bg-primary text-white shadow-sm">
+                    <FaStar size={14} />
+                    <p className="font-medium text-xs">Most popular</p>
                   </div>
                 </div>
               )}
-              <div className="space-y-4 w-full">
+
+              <div className="w-full">
                 {/* Title */}
-                <h3 className="text-xl tracking-tight font-semibold text-gray-800 mb-3 group-hover:text-blue-900">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {item.title}
                 </h3>
+
                 {/* Subtitle */}
-                <p className="pl-1 text-gray-600 text-base tracking-tight ">
-                  {item.subtitle}
-                </p>
+                <p className="text-gray-600 text-sm">{item.subtitle}</p>
               </div>
 
               {/* list texts */}
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-3 pt-2">
                 {item.listItems.map((listItem, index) => (
                   <ul key={index} className="flex flex-col">
                     <ListItemText text={listItem} />
@@ -111,11 +110,15 @@ export default function EngagementModels() {
 
               {/* Get Started Button */}
               <button
-                className={`${
-                  index !== 1
-                    ? `text-black bg-white border border-gray-400`
-                    : `text-white bg-primary`
-                } text-center p-2 rounded-full w-full`}
+                className={`
+                  mt-auto w-full rounded-full py-3 text-sm font-semibold
+                  transition-colors duration-200
+                  ${
+                    index === 1
+                      ? "bg-primary text-white hover:bg-primary/90"
+                      : "bg-white text-gray-900 border border-gray-300 hover:border-gray-500"
+                  }
+                `}
               >
                 Get started
               </button>

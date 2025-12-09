@@ -34,8 +34,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   @apply overscroll-none;
 }
+
+/* html, body {
+  overflow-x: hidden;
+} */

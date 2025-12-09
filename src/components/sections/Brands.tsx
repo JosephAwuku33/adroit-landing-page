@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 export default function Brands() {
   return (
     <section className="w-full font-inter py-8">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-4 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-4 text-center md:text-left">

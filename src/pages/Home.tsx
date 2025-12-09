@@ -1,3 +1,4 @@
+// import AISolutions from "../components/sections/AISolutions";
 import Brands from "../components/sections/Brands";
 import EngagementModels from "../components/sections/EngagementModels";
 import FAQ from "../components/sections/FAQ";
@@ -9,7 +10,7 @@ import WhyItWorks from "../components/sections/WhyItWorks";
 
 export default function Home() {
   return (
-    <main className="min-h-full overflow-x-hidden">
+    <main className="h-full w-full">
       <Brands />
       <TrustedCount />
       <HireUsReason />
@@ -17,6 +18,7 @@ export default function Home() {
       <HowWeWork />
       <EngagementModels />
       <WhatWeDelivered />
+      {/* <AISolutions /> */}
       <FAQ />
     </main>
   );

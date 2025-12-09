@@ -11,7 +11,7 @@ function App() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="min-h-screen w-full overflow-x-hidden"
+        className="h-full w-full"
       >
         <Router>
           <Header />

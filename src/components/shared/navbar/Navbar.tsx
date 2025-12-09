@@ -17,10 +17,10 @@ export default function Navbar() {
           ? "flex-col items-start"
           : "flex-row items-center justify-between"
       } ${
-        scrolled ? "bg-white text-black shadow-lg": "text-white"
-      } fixed min-w-full z-20 top-0 start-0`}
+        scrolled ? "bg-white text-black shadow-lg" : "text-white"
+      } fixed w-full z-20 top-0 start-0`}
     >
-      <div className="max-w-7xl flex flex-wrap items-center justify-between md:mx-4 p-2">
+      <div className="mx-auto container flex flex-wrap items-center justify-between p-2">
         {/* Logo */}
         <div className="flex flex-row items-center">
           <img

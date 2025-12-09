@@ -24,13 +24,13 @@ const itemVariants = {
 export default function Footer() {
   return (
     <motion.footer
-      className="bg-linear-to-b from-secondary to-primary text-pink-900 font-inter"
+      className="bg-linear-to-b from-secondary to-primary text-pink-900 font-inter w-full"
       variants={footerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
-      <div className="mx-auto min-w-full px-6 pb-8 pt-8">
+      <div className="mx-auto container px-6 pb-8 pt-8">
         {/*  */}
         <div className="flex flex-col lg:flex-row lg:gap-12 gap-4 md:gap-6 items-start w-full">
           <div className="flex flex-row items-center gap-2">

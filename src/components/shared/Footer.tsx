@@ -56,8 +56,8 @@ export default function Footer() {
               Suger Land, Tx 77478,USA
             </p>
             <div>
-              <p className="text-pink-900 text-base">T:+1-937-776-8924</p>
-              <p className="text-pink-900 text-base">E:hello@adroit360usa.com</p>
+              <p className="text-pink-900 text-base">T: 937-776-8924</p>
+              <p className="text-pink-900 text-base">E: hello@adroit360usa.com</p>
             </div>
           </div>
           <div className="border border-gray-300 w-full md:w-full md:h-0 lg:h-12 lg:w-0" />

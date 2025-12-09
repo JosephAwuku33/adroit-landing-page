@@ -14,7 +14,7 @@ export default function EngagementModels() {
   const items = [
     {
       id: "1",
-      img: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://plus.unsplash.com/premium_photo-1723489459772-bda356f40f6d?q=80&w=1037&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Agency Overflow Squad",
       subtitle: "Perfect for agencies needing extra capacity",
       listItems: [
@@ -25,7 +25,7 @@ export default function EngagementModels() {
     },
     {
       id: "2",
-      img: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://images.unsplash.com/photo-1714976326874-d6342834b628?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Startup Product Squad",
       subtitle: "Best value for growing startups",
       listItems: [
@@ -36,7 +36,7 @@ export default function EngagementModels() {
     },
     {
       id: "3",
-      img: "https://media.istockphoto.com/id/1446470674/photo/mvp-minimum-viable-product-concept-for-lean-startup-life-cycle-of-product-development.jpg?s=1024x1024&w=is&k=20&c=TeprYs0JavadJ3toBS-rvpLfob2ZADtOjXAamf0fGKg=",
+      img: "https://plus.unsplash.com/premium_photo-1661274165926-1510d360d068?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Fixed-scope MVP Build",
       subtitle: "Complete project delivery",
       listItems: [
@@ -48,17 +48,17 @@ export default function EngagementModels() {
   ];
 
   return (
-    <section id="models" className="bg-gray-50 py-20 w-full font-inter">
+    <section id="models" className="bg-gray-50 py-20 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
+          <h2 className="text-3xl font-inter md:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
             Simple, transparent engagement models
           </h2>
         </div>
 
         {/* items */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 place-items-stretch gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 place-items-stretch gap-8 font-inter-tight">
           {items.map((item, index) => (
             <div
               key={item.id}

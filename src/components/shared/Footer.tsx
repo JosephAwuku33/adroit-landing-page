@@ -24,7 +24,7 @@ const itemVariants = {
 export default function Footer() {
   return (
     <motion.footer
-      className="bg-linear-to-b from-secondary to-primary text-pink-900 font-inter w-full"
+      className="bg-black/80 text-white font-inter w-full"
       variants={footerVariants}
       initial="hidden"
       whileInView="visible"
@@ -39,25 +39,23 @@ export default function Footer() {
               alt="Adroit Logo"
               className="w-10 h-10"
             />
-            <p className="font-inter text-xl text-pink-900">Adroit 360</p>
+            <p className="font-inter text-base text-white">Adroit 360</p>
           </div>
           <div className="border border-gray-300 w-full hidden lg:block lg:w-0 lg:h-12 " />
           <div className="hidden lg:block">
-            <p className="text-pink-900 text-base">
+            <p className="text-white text-sm">
               77 Sugar Creek Center Boulevard, <br />
               Suger Land, Tx 77478,USA
             </p>
           </div>
           <div className="border border-gray-300 w-full lg:w-0 lg:h-12" />
           <div className="space-y-4 lg:space-y-0">
-            <p className="text-pink-900 text-base lg:hidden block">
-              77 Sugar Creek Center Boulevard,
-              <br />
-              Suger Land, Tx 77478,USA
+            <p className="text-white text-sm lg:hidden block">
+              77 Sugar Creek Center Boulevard, Suger Land, Tx 77478,USA
             </p>
             <div>
-              <p className="text-pink-900 text-base">T: 937-776-8924</p>
-              <p className="text-pink-900 text-base">E: hello@adroit360usa.com</p>
+              <p className="text-white text-sm">T:937-776-8924</p>
+              <p className="text-white text-sm">E:hello@adroit360usa.com</p>
             </div>
           </div>
           <div className="border border-gray-300 w-full md:w-full md:h-0 lg:h-12 lg:w-0" />
@@ -67,7 +65,7 @@ export default function Footer() {
               <motion.a
                 key={item.name}
                 // href={item.href}
-                className="text-pink-900/90 flex flex-col items-center justify-center space-y-3 hover:text-pink-900 transition duration-200 transform hover:scale-125"
+                className="text-white/90 flex flex-col items-center justify-center space-y-3 hover:text-white transition duration-200 transform hover:scale-125"
                 aria-label={item.name}
                 whileHover={{ y: -3, scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -84,7 +82,7 @@ export default function Footer() {
               <motion.a
                 key={item.name}
                 // href={item.href}
-                className="text-pink-900/90 flex flex-col items-center justify-center space-y-2 hover:text-pink-900 transition duration-200 transform hover:scale-125"
+                className="text-white/90 flex flex-col items-center justify-center space-y-2 hover:text-white transition duration-200 transform hover:scale-125"
                 aria-label={item.name}
                 whileHover={{ y: -3, scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -99,7 +97,7 @@ export default function Footer() {
         <div className="flex mt-6">
           {/* Copyright */}
           <motion.p
-            className="text-xs leading-5 text-pink-900 order-1"
+            className="text-xs leading-5 text-white order-1"
             variants={itemVariants}
           >
             &copy; {new Date().getFullYear()} Adroit 360 All rights reserved.

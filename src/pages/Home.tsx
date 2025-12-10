@@ -10,7 +10,7 @@ import WhyItWorks from "../components/sections/WhyItWorks";
 
 export default function Home() {
   return (
-    <main className="h-full w-full">
+    <main className="h-full w-full overflow-x-clip">
       <Brands />
       <TrustedCount />
       <HireUsReason />

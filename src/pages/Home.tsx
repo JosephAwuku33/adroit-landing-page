@@ -1,4 +1,4 @@
-// import AISolutions from "../components/sections/AISolutions";
+import AISolutions from "../components/sections/AISolutions";
 import Brands from "../components/sections/Brands";
 import EngagementModels from "../components/sections/EngagementModels";
 import FAQ from "../components/sections/FAQ";
@@ -18,7 +18,7 @@ export default function Home() {
       <HowWeWork />
       <EngagementModels />
       <WhatWeDelivered />
-      {/* <AISolutions /> */}
+      <AISolutions />
       <FAQ />
     </main>
   );

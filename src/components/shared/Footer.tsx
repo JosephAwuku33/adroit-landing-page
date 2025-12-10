@@ -41,14 +41,14 @@ export default function Footer() {
             />
             <p className="font-inter text-base text-white">Adroit 360</p>
           </div>
-          <div className="border border-gray-300 w-full hidden lg:block lg:w-0 lg:h-12 " />
+          <div className="border border-primary w-full hidden lg:block lg:w-0 lg:h-12 " />
           <div className="hidden lg:block">
             <p className="text-white text-sm">
               77 Sugar Creek Center Boulevard, <br />
               Suger Land, Tx 77478,USA
             </p>
           </div>
-          <div className="border border-gray-300 w-full lg:w-0 lg:h-12" />
+          <div className="border border-primary w-full lg:w-0 lg:h-12" />
           <div className="space-y-4 lg:space-y-0">
             <p className="text-white text-sm lg:hidden block">
               77 Sugar Creek Center Boulevard, Suger Land, Tx 77478,USA
@@ -58,7 +58,7 @@ export default function Footer() {
               <p className="text-white text-sm">E:hello@adroit360usa.com</p>
             </div>
           </div>
-          <div className="border border-gray-300 w-full md:w-full md:h-0 lg:h-12 lg:w-0" />
+          <div className="border border-primary w-full md:w-full md:h-0 lg:h-12 lg:w-0" />
           {/* Mobile Icons and Tablet*/}
           <div className="grid grid-cols-3 w-full gap-4 lg:hidden">
             {icons.map((item) => (
